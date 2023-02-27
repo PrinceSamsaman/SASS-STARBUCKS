@@ -1,0 +1,126 @@
+.banner{
+    max-width: 40rem;
+    padding: 5rem 0;
+    padding-top: 11rem;
+    margin: 0 auto;
+    &__wrapper{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        img{
+            width: 60%;  
+        }
+    }
+    &__text{
+        padding: 2rem 0;
+        h1{
+            color: $clr-primary;
+            text-align: center;
+            padding: 1rem 0;
+            font-size: 3rem;
+        }
+        p{
+            text-align: justify;
+            padding-bottom: 2rem;
+        }
+        a{
+            text-align: center;
+            text-transform: uppercase;
+            color: $clr-light;
+            padding: 1.5rem 3rem;
+            font-weight: 600;
+            background: $clr-primary;
+            border-radius: 3rem;
+            display: inline-block;
+            border: 1px solid transparent;
+            &:hover  {
+                color: $clr-primary;
+                background: $clr-light;
+                border: 1px solid $clr-primary;
+            }
+        }
+        
+    }
+    
+    @include mediaQuery($break-lg){
+            max-width: unset;
+
+            &__wrapper{
+                flex-direction: row;
+                justify-content: space-between;  
+            }
+            h1{
+                text-align: left;
+                font-size: 7rem;
+            }
+            p{
+
+            }
+            a {
+                text-align: left;
+                margin-right: 20rem;
+            }
+            img {
+                width: 40%;
+            }
+            
+        
+    }   
+}
+
+.hm-services{
+    background: $clr-dark;
+    margin: 0 auto;
+    &__wrapper{
+        text-align: center;
+        margin: 0 auto;
+        padding: 4rem 0;
+    }
+    &__item{
+        text-align: center;
+        margin: 0 4rem;
+        padding: 3.5rem 0;
+        i{
+            font-size: 6rem;
+            color: $clr-primary;
+            margin-bottom: 2rem;
+        }
+        h4{
+            font-size: 2.5rem;
+            color: $clr-primary;
+            font-weight: 600;
+        }
+        p{
+            color: $clr-light;
+            margin: 2rem 0;
+            text-align: justify;
+        }
+        a{
+            color: $clr-dark;
+            padding: 1.5rem 3rem;
+            font-weight: 700;
+            font-size: 2rem;
+            background: $clr-primary;
+            border-radius: 3rem;
+            display: inline-block;
+            border: 1px solid transparent;
+            &:hover  {
+                color: $clr-primary;
+                background: $clr-dark;
+                border: 1px solid $clr-primary;
+            }
+        }
+        
+
+    }
+
+    @include mediaQuery($break-lg){
+        .hm-services{
+            &__wrapper{
+                @include grid(3, 5rem);
+            }
+        }
+    }
+}

@@ -60,10 +60,11 @@ $alignments: (
 
 @for $i from 1 through 20{
     .py--#{$i}{
-        padding: $i +rem 0;
+        padding: $i + rem 0;
     }
     .ml--#{$i}{
-        margin-left: $i +rem;
+        margin-left: $i + rem;
     }
 }
     
+
