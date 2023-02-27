@@ -415,6 +415,9 @@ body {
   .banner img {
     width: 40%;
   }
+  .banner__text {
+    max-width: 40rem;
+  }
 }
 
 .hm-services {
